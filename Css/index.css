@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar,
+.List {
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    background-color: #67f2f24a;
+    padding: 11px 2px;
+}
+
+.List {
+    border: 2px solid #65ffff;
+    padding-left: 2px;
+    margin-left: 40%;
+    margin-right: 43%;
+    background-color: #00ffff7a;
+    border-radius: 40rem;
+    align-items: center;
+    font-family: 'Sansita Swashed';
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+}
+
+.gamecontainer {
+    background-color: rgb(211 251 251);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: #65ffff;
+}
+
+.gameInfo {
+    padding: 2px 57px;
+    margin: 2px 80px;
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.btn {
+    margin: 10px 9px;
+    padding: 5px 7px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.line {
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+
+.btn:hover {
+    background-color: grey;
+}
+
+.info {
+    margin: 2px 32px;
+    font-size: 53px;
+}
+
+@media screen and (max-width:1200px) {
+    .list {
+        margin-left: 42%;
+        margin-right: 37%;
+    }
+}
